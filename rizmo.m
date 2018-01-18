@@ -53,6 +53,11 @@ pause;
 
 %% accuracy
 % here we check accuracy of our model 
+
+% load('test_set.mat'); age farz konim ke testset matris haye X_test va y_test ro dare 
+% mizarim   pred = accuracy(all_theta, X_test);
+%           fprintf('\n Accuracy: %f\n', mean(double(pred == y_test)) * 100);
+
 pred = accuracy(all_theta, X);
 
 fprintf('\n Accuracy: %f\n', mean(double(pred == y)) * 100);
