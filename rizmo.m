@@ -22,6 +22,12 @@ load('data_set.mat'); % in this mat file there are two vectors .. X is a
                       % for rizmo you need to be carful about this and one
                       % other thing if for example image number 457 belongs
                       % to person 7 then y(457)=7 .. got it??
+
+                     
+      % X=importdata('X.txt');
+      % y=importdata('y.txt');
+
+
                      
 m = size(X, 1);
 
@@ -57,6 +63,12 @@ pause;
 % load('test_set.mat'); age farz konim ke testset matris haye X_test va y_test ro dare 
 % mizarim   pred = accuracy(all_theta, X_test);
 %           fprintf('\n Accuracy: %f\n', mean(double(pred == y_test)) * 100);
+
+
+ % X_test=importdata('X_test.txt');
+ %      y_test=importdata('y_test.txt');
+ %pred = accuracy(all_theta, X_test);
+ %fprintf('\n Accuracy: %f\n', mean(double(pred == y_test)) * 100);
 
 pred = accuracy(all_theta, X);
 
